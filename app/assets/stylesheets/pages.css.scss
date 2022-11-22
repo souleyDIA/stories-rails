@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
 .menu {
   position: fixed;
   top: 0;
@@ -13,13 +11,13 @@
   background-color: #f0efef;
   z-index: 100;
   transform: translateX(-100%);
-  transition: transform 0.5s ease;
 }
 
 .menu-icon {
   position: absolute;
   top: 1rem;
   left: 1rem;
+  z-index: 101;
 }
 
 .menu-icon img {
@@ -37,19 +35,18 @@
   justify-content: center;
 }
 
+.menu.open {
+  transform: translateX(0);
+}
+
 .menu-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  z-index: 101;
 }
 
 .menu-close img {
   width: 2rem;
-}
-
-.menu.open {
-  transform: translateX(0);
 }
 
 .menu ul {
@@ -88,6 +85,32 @@
 }
 
 .main button {
+  background-color: #f9e42e;
+  border: none;
+  border-radius: 5px;
+  color: #033048;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.main-about {
+  background-image: url("https://img.freepik.com/photos-gratuite/fond-bleu-degrade-luxe-abstrait-bleu-fonce-lisse-vignette-noire-studio-banner_1258-54048.jpg?w=1480&t=st=1669128243~exp=1669128843~hmac=5791fc7bd81a908127725412b6232c0f8b546974582dd8ac1c67af44ddec60c2");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-about h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.supporting button {
   background-color: #f9e42e;
   border: none;
   border-radius: 5px;
@@ -175,6 +198,12 @@
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 500px;
 }
 
 .container {

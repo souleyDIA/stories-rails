@@ -7,57 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="menu">
-  <div class="menu-icon">
+  <button class="menu-icon">
     <img src="https://content.codecademy.com/projects/z2d/stories/menu-black.svg?_gl=1*5l47kt*_ga*NTgzNDEwOTE1My4xNjY4NTk1MzIw*_ga_3LRZM6TM9L*MTY2OTExNDc3Ny40NS4xLjE2NjkxMTYyMTAuMC4wLjA." alt="Menu">
-  </div>
-  <div class="menu-content">
-    <div class="menu-close">
-      <img src="https://content.codecademy.com/projects/z2d/stories/close-black.svg?_gl=1*5l47kt*_ga*NTgzNDEwOTE1My4xNjY4NTk1MzIw*_ga_3LRZM6TM9L*MTY2OTExNDc3Ny40NS4xLjE2NjkxMTYyMTAuMC4wLjA." alt="Close">
+  </button>
+<div class="menu">
+<div class="menu-content">
+  <button class="menu-close">
+    <img src="https://content.codecademy.com/projects/z2d/stories/close-black.svg?_gl=1*5l47kt*_ga*NTgzNDEwOTE1My4xNjY4NTk1MzIw*_ga_3LRZM6TM9L*MTY2OTExNDc3Ny40NS4xLjE2NjkxMTYyMTAuMC4wLjA." alt="Close">
+  </button>
+  <ul>
+    <li><a href="#"><%= link_to "Home", home_path %></a></li>
+    <li><a href="#"><%= link_to "About", about_path %></a></li>
+    <li><a href="#"><%= link_to "Contact", contact_path %></a></li>
+  </ul>
+</div>
+</div>
+
+  <%= yield %>
+
+  <div class="footer">
+    <div class="container">
+      <ul>
+        <li><a href="https://github.com/souleyDIA"><%= image_tag("github.png", style: 'height10%;width:10%;') %></a></li>
+        <li><a href="https://www.linkedin.com/in/souleymane-dia-9871b219b/"><%= image_tag("linkedin.png", style: 'height:10%;width:10%;') %></a></li>
+        <li><a href="#"><%= image_tag("twitter.png", style: 'height:10%;width:10%;') %></a></li>
+      </ul>
+      <p>&copy; 2022 Souleymane DIA</p>
     </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="main">
-  <div class="container">
-    <h1>Heading</h1>
-    <button>Learn more</button>
-  </div>
-</div>
-
-<div class="supporting">
-  <div class="container">
-    <h2>Subheading</h2>
-    <p>Tagline</p>
-  </div>
-</div>
-
-<div class="secondary">
-  <div class="container">
-    <h2>Subheading</h2>
-    <p>Tagline</p>
-  </div>
-</div>
-
-<div class="discover">
-  <div class="container">
-    <h2>Subheading</h2>
-    <button>Learn more</button>
-  </div>
-</div>
-
-<footer>
-  <div class="container">
-    <p>Footer</p>
-  </div>
-</footer>
-<%= yield %>
-
+  </div> 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

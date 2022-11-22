@@ -17,11 +17,9 @@
 
 $(document).ready(function() {
   $('.menu-icon').click(function() {
-    $('.menu-content').animate({left: '0px'}, 200);
-    $('body').animate({left: '285px'}, 200);
+    $('.menu').addClass('open');
   });
   $('.menu-close').click(function() {
-    $('.menu-content').animate({left: '-285px'}, 200);
-    $('body').animate({left: '0px'}, 200);
+    $('.menu').removeClass('open');
   });
 });
