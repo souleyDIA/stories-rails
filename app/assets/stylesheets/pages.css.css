@@ -1,0 +1,177 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f0efef;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.menu-icon img {
+  width: 2rem;
+}
+
+.menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 101;
+}
+
+.menu-close img {
+  width: 2rem;
+}
+
+.menu.open {
+  transform: translateX(0);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 1rem 0;
+}
+
+.menu ul li a {
+  color: #033048;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  background-image: url("https://img.freepik.com/photos-gratuite/vue-aerienne-belle-foret-arbres-recouverte-brouillard-bled-slovenie_181624-7925.jpg?w=1380&t=st=1669115740~exp=1669116340~hmac=ca4d7a3c4252a883262863c3053b535d8fb797a8cd5145101a7c13449fba9a76");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h1 {
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.main button {
+  background-color: #f9e42e;
+  border: none;
+  border-radius: 5px;
+  color: #033048;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.supporting {
+  background-color: #f0efef;
+  padding: 3rem 0;
+}
+
+.supporting h2 {
+  color: #033048;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.supporting p {
+  color: #606161;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.secondary {
+  background-image: url("https://img.freepik.com/photos-premium/feuilles-fougere-fond-sombre-dans-jungle-feuilles-fougere-vert-fonce-dense-dans-jardin-nuit-abstrait-nature-fougere-dans-foret-tropicale-plante-exotique_33867-774.jpg?w=1380");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary h2 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.secondary p {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.discover {
+  background-color: #f0efef;
+  padding: 3rem 0;
+}
+
+.discover h2 {
+  color: #033048;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.discover button {
+  background-color: #f9e42e;
+  border: none;
+  border-radius: 5px;
+  color: #033048;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer {
+  background-color: #121212;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="menu">
+  <div class="menu-icon">
+    <img src="https://content.codecademy.com/projects/z2d/stories/menu-black.svg?_gl=1*5l47kt*_ga*NTgzNDEwOTE1My4xNjY4NTk1MzIw*_ga_3LRZM6TM9L*MTY2OTExNDc3Ny40NS4xLjE2NjkxMTYyMTAuMC4wLjA." alt="Menu">
+  </div>
+  <div class="menu-content">
+    <div class="menu-close">
+      <img src="https://content.codecademy.com/projects/z2d/stories/close-black.svg?_gl=1*5l47kt*_ga*NTgzNDEwOTE1My4xNjY4NTk1MzIw*_ga_3LRZM6TM9L*MTY2OTExNDc3Ny40NS4xLjE2NjkxMTYyMTAuMC4wLjA." alt="Close">
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+    <h1>Heading</h1>
+    <button>Learn more</button>
+  </div>
+</div>
+
+<div class="supporting">
+  <div class="container">
+    <h2>Subheading</h2>
+    <p>Tagline</p>
+  </div>
+</div>
+
+<div class="secondary">
+  <div class="container">
+    <h2>Subheading</h2>
+    <p>Tagline</p>
+  </div>
+</div>
+
+<div class="discover">
+  <div class="container">
+    <h2>Subheading</h2>
+    <button>Learn more</button>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>Footer</p>
+  </div>
+</footer>
+<%= yield %>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>
