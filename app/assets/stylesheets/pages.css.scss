@@ -171,6 +171,26 @@
   margin: 0;
 }
 
+.thanks {
+  background: #f0efef;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks h1 {
+  color: #033048;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.thanks-container {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 70%;
+}
+
 .discover button {
   background-color: #f9e42e;
   border: none;
@@ -180,8 +200,6 @@
   padding: 1rem 2rem;
   margin-top: 2rem;
 }
-
-
 
 .footer .container {
   text-align: center;
